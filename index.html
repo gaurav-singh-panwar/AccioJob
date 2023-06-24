@@ -1,12 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="script.js">
 </head>
+
 <body>
-    <a href="https://gaurav-singh-panwar.github.io/AccioJob/Contest_1_June/">Contest 1 June</a>
-    
-</body>
+
+    <body>
+        <div class="navbar">
+            <a href="#">Library System</a>
+            <div>
+                <a href="#books">Books</a>
+                <a href="#register">Register</a>
+                <a href="#contact">Conatct Us</a>
+                <a href="log">Logout</a>
+            </div>
+        </div>
+        <div class="books-wrapper">
+            <h1>Books</h1>
+
+            <table id="books">
+                <tr class="bookhead">
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <a
+                            href="https://www.google.co.in/books/edition/To_Kill_A_Mockingbird/u019AwAAQBAJ?hl=en&gbpv=0">To
+                            Kill a Mockingbird</a>
+                        <table class="inside">
+                            <tr>
+                                <td>Publication Date: July 11, 1960</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 300</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 978-0-123456-78-9</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Harper Lee</td>
+                    <td>Fiction,Sci-Fi</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <a href="https://www.google.co.in/books/edition/Pride_and_Prejudice/5Dm4Za5w1D8C?hl=en&gbpv=0">Pride
+                            and Prejudice</a>
+                        <table class="inside">
+                            <tr>
+                                <td>Publication Date: January 28, 1813</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 250</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 978-0-987654-32-1</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Jane Austen</td>
+                    <td>Romance</td>
+                    <td>Not Available</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/The_Great_Gatsby">The Great Gatsby</a>
+                        <table class="inside">
+                            <tr>
+                                <td>Publication Date: April 10, 1925</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 400</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 978-0-555555-55-5</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>Fiction</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/The_Hobbit">The Hobbit</a>
+                        <table class="inside">
+                            <tr>
+                                <td>Publication Date: September 21, 1937</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 300</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 978-9-876543-21-0</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>J.R.R. Tolkien</td>
+                    <td>Fanatsy</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>
+                        <a
+                            href="https://www.google.co.in/books/edition/1984/5AwIEAAAQBAJ?hl=en&gbpv=1&printsec=frontcover">1984</a>
+                        <table class="inside">
+                            <tr>
+                                <td>Publication Date: June 8, 1949</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count: 220</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN: 978-1-234567-89-0</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>George Orwell</td>
+                    <td>Political Fictionr</td>
+                    <td>Available</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="form-container">
+            <form>
+                <h2 id="register">Registration Form</h2>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" required>
+
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" min="5" max="100" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" required>
+
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </body>
+
 </html>
