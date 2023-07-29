@@ -4,6 +4,6 @@
 
 ## 2. [Contest 2 July](https://gaurav-singh-panwar.github.io/AccioJob/Frontend-2/contest-2/)
 
-## 3. [Contest 2 July](https://gaurav-singh-panwar.github.io/AccioJob/Frontend-2/contest-3/)
+## 3. [Contest 3 July](https://gaurav-singh-panwar.github.io/AccioJob/Frontend-2/contest-3/)
 
 
