@@ -1,0 +1,198 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: rgb(38 40 56);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(44 47 84);
+    height: 100%;
+   
+    border-radius: 55px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    align-content: center;
+    margin: 0;
+    margin-left: 185px;
+    margin-bottom: 50px;
+}
+
+#cityInput{
+    font-size: 20px;
+    width: 700px;
+    height: 35px;
+    background-color: rgb(44 47 84);
+    color: white;
+    /* border-style: none; */
+    border: 0.5px solid #585884;
+    border-radius: 55px;
+    text-indent: 10px;
+}
+.head-title{
+    color: transparent;
+    font-weight: 800;
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    height: 70px;
+    background-image: url(imges/HD-wallpaper-rain-drop-color-colour-water.jpg);
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+.title-text{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    height: 50px;
+    transition: all 0.2s ease;
+}
+.title-text:hover{
+    margin-bottom: 15px;
+}
+.input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6c5e96;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 115px;
+    border-radius: 55px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+#addButton:hover{
+    scale: 1.03;
+}
+#weatherCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0px 15px 0px 70px;
+}
+#call-alert{
+    width:250px;
+    height: 300px;
+    display: none;
+}
+#cards{
+    
+    display: flex;
+    height: 175px;
+    width: 315px;
+    background-image: url(imges/Rectangle\ 1.png);
+    color: white;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    margin: 0px 0px 35px;
+}
+#cards:hover{
+    scale: 1.03;
+}
+#details{
+    width: 140px;
+    top: 60px;
+    position: relative;
+    height: 130px;
+    margin-left: 10px;
+}
+#weather-type{
+    text-align: end;
+    margin: 0;
+    /* text-indent: 0px; */
+    margin-right: 40px;
+}
+#wind{
+    font-size: 15px;
+    color: #a8a8a8;
+}
+#temp{
+    font-size: 35px;
+    margin: 0;
+}
+#weather-img{
+    width: 140px;
+    height: 140px;
+}
+#bg-color{
+    position: absolute;
+    color: blue;
+    height: 190px;
+    width: 300px;
+    background-color: bisque;
+}
+
+@media screen and (min-width:910px) and (max-width:1100px){
+    #weatherCards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0px 15px 0px 70px;
+    }
+    #cards {
+        scale: 1.2;
+        margin: 0px 0px 80px;
+    }
+    .input-container{
+        width: 500px;
+        margin-left: 186px;
+    }
+    .input-container button{
+        width: 150px;
+    }
+}
+@media screen and (min-width:650px) and (max-width:909px) {
+    #weatherCards{
+        grid-template-columns: repeat(1,2fr);
+        padding: 0px 15px 0px 70px;
+    }
+    #cards {
+        scale: 1.5;
+    margin: 0px 0px 110px;
+    margin-left: 22%;
+    margin-top: 44px;
+    }
+    .input-container{
+        width: 480px;
+        margin-left: 14%;
+    }
+    .input-container button{
+        width: 173px;
+    }
+}
+@media screen and (min-width:500px) and (max-width:649px) {
+    #weatherCards{
+        grid-template-columns: repeat(1,2fr);
+        padding: 0px 15px 0px 70px;
+    }
+    #cards {
+        scale: 1.5;
+    margin: 0px 0px 110px;
+    margin-left: 11%;
+    margin-top: 44px;
+    }
+    .input-container{
+        width: 400px;
+        margin-left: 14%;
+    }
+    .input-container button{
+        width: 212px;
+    }
+}
