@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #242A32;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container h1 {
+    color: #0296E5;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.search-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100%;
+}
+
+#api-logo {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    order: 2;
+}
+
+#search-logo {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    order: 2;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 0;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #3A3F47;
+    color: white;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .search-container,
+    .input-container {
+        flex-direction: column;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card {
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-card img {
+    max-width: 100%;
+}
+
+.movie-card h3 {
+    margin: 10px 0;
+}
+
+.imdb-link {
+    color: #007bff;
+    text-decoration: none;
+}
